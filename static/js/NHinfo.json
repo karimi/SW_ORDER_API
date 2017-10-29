@@ -1,0 +1,2421 @@
+{
+  "objectIdFieldName": "OBJECTID",
+  "globalIdFieldName": "",
+  "geometryType": "esriGeometryPolygon",
+  "spatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+  },
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "BoroCode",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "BoroCode",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "BoroName",
+      "type": "esriFieldTypeString",
+      "alias": "BoroName",
+      "sqlType": "sqlTypeOther",
+      "length": 13,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "CountyFIPS",
+      "type": "esriFieldTypeString",
+      "alias": "CountyFIPS",
+      "sqlType": "sqlTypeOther",
+      "length": 3,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "NTACode",
+      "type": "esriFieldTypeString",
+      "alias": "NTACode",
+      "sqlType": "sqlTypeOther",
+      "length": 4,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "NTAName",
+      "type": "esriFieldTypeString",
+      "alias": "NTAName",
+      "sqlType": "sqlTypeOther",
+      "length": 75,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Shape__Area",
+      "type": "esriFieldTypeDouble",
+      "alias": "Shape__Area",
+      "sqlType": "sqlTypeDouble",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Shape__Length",
+      "type": "esriFieldTypeDouble",
+      "alias": "Shape__Length",
+      "sqlType": "sqlTypeDouble",
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 1,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK88",
+        "NTAName": "Borough Park",
+        "Shape__Area": 54005019.0708466,
+        "Shape__Length": 39247.2280276521
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 2,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN52",
+        "NTAName": "East Flushing",
+        "Shape__Area": 29454380.0176086,
+        "Shape__Length": 25843.364934268
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 3,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN48",
+        "NTAName": "Auburndale",
+        "Shape__Area": 34164217.6496124,
+        "Shape__Length": 32446.8787635539
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 4,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN51",
+        "NTAName": "Murray Hill",
+        "Shape__Area": 52488277.2937012,
+        "Shape__Length": 33266.9047320894
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 5,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN27",
+        "NTAName": "East Elmhurst",
+        "Shape__Area": 19726946.6862335,
+        "Shape__Length": 19816.6850560532
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 6,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX35",
+        "NTAName": "Morrisania-Melrose",
+        "Shape__Area": 16891753.4405975,
+        "Shape__Length": 27740.8456679615
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 7,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX98",
+        "NTAName": "Rikers Island",
+        "Shape__Area": 18154825.0468292,
+        "Shape__Length": 18903.1953363359
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 8,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN07",
+        "NTAName": "Hollis",
+        "Shape__Area": 22887772.8652191,
+        "Shape__Length": 20976.335573948
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 9,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN06",
+        "NTAName": "Manhattanville",
+        "Shape__Area": 10647077.4640808,
+        "Shape__Length": 17040.6854753315
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 10,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN02",
+        "NTAName": "Springfield Gardens North",
+        "Shape__Area": 28428421.2696228,
+        "Shape__Length": 25433.4913614056
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 11,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN46",
+        "NTAName": "Bayside-Bayside Hills",
+        "Shape__Area": 80797535.8653412,
+        "Shape__Length": 43014.8052937434
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 12,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK25",
+        "NTAName": "Homecrest",
+        "Shape__Area": 29991967.0019073,
+        "Shape__Length": 27514.0233354902
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 13,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX59",
+        "NTAName": "Westchester-Unionport",
+        "Shape__Area": 23945209.7799835,
+        "Shape__Length": 26557.4091845087
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 14,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN41",
+        "NTAName": "Fresh Meadows-Utopia",
+        "Shape__Area": 27774853.4859772,
+        "Shape__Length": 22106.4312569355
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 15,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN17",
+        "NTAName": "Midtown-Midtown South",
+        "Shape__Area": 30192069.9040527,
+        "Shape__Length": 27035.6890113861
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 16,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN19",
+        "NTAName": "Turtle Bay-East Midtown",
+        "Shape__Area": 17397872.2558746,
+        "Shape__Length": 21638.7813753256
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 17,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN47",
+        "NTAName": "Ft. Totten-Bay Terrace-Clearview",
+        "Shape__Area": 46293615.3707733,
+        "Shape__Length": 39619.3210551427
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 18,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN08",
+        "NTAName": "St. Albans",
+        "Shape__Area": 77412764.4114227,
+        "Shape__Length": 45401.2254178572
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 19,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN54",
+        "NTAName": "Richmond Hill",
+        "Shape__Area": 50978928.5246124,
+        "Shape__Length": 33791.4101290615
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 20,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN25",
+        "NTAName": "Corona",
+        "Shape__Area": 20080371.7448273,
+        "Shape__Length": 23870.1540107176
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 21,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN55",
+        "NTAName": "South Ozone Park",
+        "Shape__Area": 82461495.5024872,
+        "Shape__Length": 36708.2533503022
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 22,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN06",
+        "NTAName": "Jamaica Estates-Holliswood",
+        "Shape__Area": 42789975.8538666,
+        "Shape__Length": 35465.9749361479
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 23,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK44",
+        "NTAName": "Madison",
+        "Shape__Area": 27379162.1694031,
+        "Shape__Length": 26237.2576412093
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 24,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK40",
+        "NTAName": "Windsor Terrace",
+        "Shape__Area": 14041717.3690796,
+        "Shape__Length": 19033.5235692377
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 25,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK41",
+        "NTAName": "Kensington-Ocean Parkway",
+        "Shape__Area": 15893305.2644196,
+        "Shape__Length": 20800.7521164185
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 26,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK95",
+        "NTAName": "Erasmus",
+        "Shape__Area": 14522603.5630646,
+        "Shape__Length": 18756.7020331022
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 27,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX33",
+        "NTAName": "Longwood",
+        "Shape__Area": 10732452.2079163,
+        "Shape__Length": 18982.129532175
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 28,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK69",
+        "NTAName": "Clinton Hill",
+        "Shape__Area": 20528223.3302917,
+        "Shape__Length": 23971.4511933984
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 29,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX52",
+        "NTAName": "Schuylerville-Throgs Neck-Edgewater Park",
+        "Shape__Area": 88591021.3744202,
+        "Shape__Length": 91009.0775660112
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 30,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN49",
+        "NTAName": "Whitestone",
+        "Shape__Area": 69043673.0823975,
+        "Shape__Length": 56926.9305630064
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 31,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN26",
+        "NTAName": "North Corona",
+        "Shape__Area": 18000809.4409637,
+        "Shape__Length": 18431.0491109452
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 32,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK27",
+        "NTAName": "Bath Beach",
+        "Shape__Area": 20538982.7443848,
+        "Shape__Length": 22383.4086185505
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 33,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK28",
+        "NTAName": "Bensonhurst West",
+        "Shape__Area": 46666593.5736237,
+        "Shape__Length": 37137.1605818214
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 34,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK76",
+        "NTAName": "Greenpoint",
+        "Shape__Area": 35338829.7378387,
+        "Shape__Length": 29112.5777352594
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 35,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN30",
+        "NTAName": "Maspeth",
+        "Shape__Area": 35633120.7846222,
+        "Shape__Length": 41265.5943195634
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 36,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK17",
+        "NTAName": "Sheepshead Bay-Gerritsen Beach-Manhattan Beach",
+        "Shape__Area": 63342444.9947968,
+        "Shape__Length": 91047.6670841992
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 37,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN35",
+        "NTAName": "Briarwood-Jamaica Hills",
+        "Shape__Area": 29408862.6254425,
+        "Shape__Length": 30081.9320776519
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 38,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN61",
+        "NTAName": "Jamaica",
+        "Shape__Area": 47308036.5466919,
+        "Shape__Length": 43696.3647225312
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 39,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI45",
+        "NTAName": "New Dorp-Midland Beach",
+        "Shape__Area": 55434545.8417053,
+        "Shape__Length": 34338.9084915449
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 40,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN63",
+        "NTAName": "Woodside",
+        "Shape__Area": 28245756.693573,
+        "Shape__Length": 27872.1618813472
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 41,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN76",
+        "NTAName": "Baisley Park",
+        "Shape__Area": 44042960.756073,
+        "Shape__Length": 31475.0857913756
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 42,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN01",
+        "NTAName": "South Jamaica",
+        "Shape__Area": 39971928.789856,
+        "Shape__Length": 32122.552138601
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 43,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX10",
+        "NTAName": "Pelham Bay-Country Club-City Island",
+        "Shape__Area": 40137393.0794983,
+        "Shape__Length": 138753.419662297
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 44,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK34",
+        "NTAName": "Sunset Park East",
+        "Shape__Area": 27125857.1328278,
+        "Shape__Length": 25948.7677701052
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 45,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN33",
+        "NTAName": "Cambria Heights",
+        "Shape__Area": 33076797.8557129,
+        "Shape__Length": 26168.2700874339
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 46,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN70",
+        "NTAName": "Astoria",
+        "Shape__Area": 39334649.9428406,
+        "Shape__Length": 32530.5979195548
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 47,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN34",
+        "NTAName": "Queens Village",
+        "Shape__Area": 69533433.0202026,
+        "Shape__Length": 41782.4008098536
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 48,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN66",
+        "NTAName": "Laurelton",
+        "Shape__Area": 39786978.3053131,
+        "Shape__Length": 29546.2489740521
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 49,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK45",
+        "NTAName": "Georgetown-Marine Park-Bergen Beach-Mill Basin",
+        "Shape__Area": 69329093.8395538,
+        "Shape__Length": 92268.987703676
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 50,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK43",
+        "NTAName": "Midwood",
+        "Shape__Area": 35799574.1576538,
+        "Shape__Length": 27996.590614059
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 51,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK26",
+        "NTAName": "Gravesend",
+        "Shape__Area": 31341851.5622406,
+        "Shape__Length": 39921.9893501964
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 52,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK29",
+        "NTAName": "Bensonhurst East",
+        "Shape__Area": 35776069.5115204,
+        "Shape__Length": 33920.3621682483
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 53,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI12",
+        "NTAName": "Mariner's Harbor-Arlington-Port Ivory-Graniteville",
+        "Shape__Area": 89057641.0540619,
+        "Shape__Length": 72465.649602789
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 54,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI28",
+        "NTAName": "Port Richmond",
+        "Shape__Area": 36420984.8805695,
+        "Shape__Length": 38925.1010829409
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 55,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK19",
+        "NTAName": "Brighton Beach",
+        "Shape__Area": 17179196.9417267,
+        "Shape__Length": 21057.4045756815
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 56,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI48",
+        "NTAName": "Arden Heights",
+        "Shape__Area": 50410870.7138672,
+        "Shape__Length": 29688.896832128
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 57,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK85",
+        "NTAName": "East New York (Pennsylvania Ave)",
+        "Shape__Area": 19397526.5803528,
+        "Shape__Length": 24226.8517824012
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 58,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN56",
+        "NTAName": "Ozone Park",
+        "Shape__Area": 25028982.0903015,
+        "Shape__Length": 24732.34611698
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 59,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK60",
+        "NTAName": "Prospect Lefferts Gardens-Wingate",
+        "Shape__Area": 31643055.2645569,
+        "Shape__Length": 29580.7053855055
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 60,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK90",
+        "NTAName": "East Williamsburg",
+        "Shape__Area": 39142935.9932251,
+        "Shape__Length": 49241.5035811529
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 61,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK72",
+        "NTAName": "Williamsburg",
+        "Shape__Area": 11589988.1208801,
+        "Shape__Length": 16874.4340134184
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 62,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK75",
+        "NTAName": "Bedford",
+        "Shape__Area": 32629788.9889374,
+        "Shape__Length": 29992.9237993752
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 63,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK81",
+        "NTAName": "Brownsville",
+        "Shape__Area": 32719366.0123749,
+        "Shape__Length": 27298.8492091673
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 64,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN20",
+        "NTAName": "Murray Hill-Kips Bay",
+        "Shape__Area": 14465955.0253754,
+        "Shape__Length": 23135.103742611
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 65,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK35",
+        "NTAName": "Stuyvesant Heights",
+        "Shape__Area": 31406935.8529511,
+        "Shape__Length": 28239.0807668132
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 66,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK79",
+        "NTAName": "Ocean Hill",
+        "Shape__Area": 20089914.3689423,
+        "Shape__Length": 22494.5820950272
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 67,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK61",
+        "NTAName": "Crown Heights North",
+        "Shape__Area": 51619074.7113037,
+        "Shape__Length": 35635.5435521188
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 68,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN21",
+        "NTAName": "Gramercy",
+        "Shape__Area": 7531287.38565063,
+        "Shape__Length": 12092.3750796281
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 69,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK63",
+        "NTAName": "Crown Heights South",
+        "Shape__Area": 15989888.7360992,
+        "Shape__Length": 24192.4556095401
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 70,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK96",
+        "NTAName": "Rugby-Remsen Village",
+        "Shape__Area": 32706946.1941986,
+        "Shape__Length": 30957.8536377127
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 71,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX07",
+        "NTAName": "Bronxdale",
+        "Shape__Area": 15186996.2763062,
+        "Shape__Length": 17431.8403525923
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 72,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX44",
+        "NTAName": "Williamsbridge-Olinville",
+        "Shape__Area": 36273551.0149384,
+        "Shape__Length": 27350.9534930541
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 73,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX03",
+        "NTAName": "Eastchester-Edenwald-Baychester",
+        "Shape__Area": 40256748.8673859,
+        "Shape__Length": 59165.0018976426
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 74,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX31",
+        "NTAName": "Allerton-Pelham Gardens",
+        "Shape__Area": 31693010.0137329,
+        "Shape__Length": 25467.0893234913
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 75,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK93",
+        "NTAName": "Starrett City",
+        "Shape__Area": 11598988.8574677,
+        "Shape__Length": 17414.5843119414
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 76,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN31",
+        "NTAName": "Hunters Point-Sunnyside-West Maspeth",
+        "Shape__Area": 102350792.208847,
+        "Shape__Length": 74605.2036189239
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 77,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN62",
+        "NTAName": "Queensboro Hill",
+        "Shape__Area": 26561256.321579,
+        "Shape__Length": 30549.3856578826
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 78,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK91",
+        "NTAName": "East Flatbush-Farragut",
+        "Shape__Area": 34360863.2814636,
+        "Shape__Length": 39201.0320503924
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 79,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI07",
+        "NTAName": "Westerleigh",
+        "Shape__Area": 63294785.6754303,
+        "Shape__Length": 41648.6746518794
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 80,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN45",
+        "NTAName": "Douglas Manor-Douglaston-Little Neck",
+        "Shape__Area": 68375202.9141235,
+        "Shape__Length": 45804.5182535928
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 81,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK78",
+        "NTAName": "Bushwick South",
+        "Shape__Area": 40169477.4022064,
+        "Shape__Length": 40735.7264177663
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 82,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK77",
+        "NTAName": "Bushwick North",
+        "Shape__Area": 24927981.4260559,
+        "Shape__Length": 26321.6217462515
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 83,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN20",
+        "NTAName": "Ridgewood",
+        "Shape__Area": 50495189.2696991,
+        "Shape__Length": 40608.4906840203
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 84,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN43",
+        "NTAName": "Bellerose",
+        "Shape__Area": 55192868.4759674,
+        "Shape__Length": 32084.7669874155
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 85,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN44",
+        "NTAName": "Glen Oaks-Floral Park-New Hyde Park",
+        "Shape__Area": 45667290.0307312,
+        "Shape__Length": 33596.4839236675
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 86,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX41",
+        "NTAName": "Mount Hope",
+        "Shape__Area": 14716710.0804901,
+        "Shape__Length": 18937.2474902128
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 87,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK46",
+        "NTAName": "Ocean Parkway South",
+        "Shape__Area": 17782095.7122803,
+        "Shape__Length": 21975.9971123615
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 88,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN22",
+        "NTAName": "Flushing",
+        "Shape__Area": 37864400.0478821,
+        "Shape__Length": 38363.7938653633
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 89,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI22",
+        "NTAName": "West New Brighton-New Brighton-St. George",
+        "Shape__Area": 56053988.5330963,
+        "Shape__Length": 67959.1645715514
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 90,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN27",
+        "NTAName": "Chinatown",
+        "Shape__Area": 14501905.126297,
+        "Shape__Length": 20786.1707024435
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 91,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN50",
+        "NTAName": "Stuyvesant Town-Cooper Village",
+        "Shape__Area": 5573902.37423706,
+        "Shape__Length": 11000.1773128495
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 92,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX22",
+        "NTAName": "North Riverdale-Fieldston-Riverdale",
+        "Shape__Area": 49045379.9960938,
+        "Shape__Length": 31852.3673777792
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 93,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX29",
+        "NTAName": "Spuyten Duyvil-Kingsbridge",
+        "Shape__Area": 23214098.8382416,
+        "Shape__Length": 27990.5384625915
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 94,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK42",
+        "NTAName": "Flatbush",
+        "Shape__Area": 45254807.7397156,
+        "Shape__Length": 38737.8532538856
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 95,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX62",
+        "NTAName": "Woodlawn-Wakefield",
+        "Shape__Area": 39738793.0645142,
+        "Shape__Length": 38693.8685041916
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 96,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI25",
+        "NTAName": "Oakwood-Oakwood Beach",
+        "Shape__Area": 55954004.0398026,
+        "Shape__Length": 44290.5750284164
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 97,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX30",
+        "NTAName": "Kingsbridge Heights",
+        "Shape__Area": 13166415.5841675,
+        "Shape__Length": 21315.1950715549
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 98,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX36",
+        "NTAName": "University Heights-Morris Heights",
+        "Shape__Area": 21252300.977478,
+        "Shape__Length": 24306.9572201905
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 99,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX34",
+        "NTAName": "Melrose South-Mott Haven North",
+        "Shape__Area": 17271906.3021088,
+        "Shape__Length": 19587.8850688501
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 100,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN10",
+        "NTAName": "Breezy Point-Belle Harbor-Rockaway Park-Broad Channel",
+        "Shape__Area": 99449850.3820114,
+        "Shape__Length": 114097.064873399
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 101,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN12",
+        "NTAName": "Hammels-Arverne-Edgemere",
+        "Shape__Area": 61904382.9340668,
+        "Shape__Length": 83817.6753962609
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 102,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX17",
+        "NTAName": "East Tremont",
+        "Shape__Area": 19257809.1933136,
+        "Shape__Length": 29632.1841346866
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 103,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX37",
+        "NTAName": "Van Nest-Morris Park-Westchester Square",
+        "Shape__Area": 36303110.4833984,
+        "Shape__Length": 42862.767102751
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 104,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN17",
+        "NTAName": "Forest Hills",
+        "Shape__Area": 57827616.4178009,
+        "Shape__Length": 36171.4811469405
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 105,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN60",
+        "NTAName": "Kew Gardens",
+        "Shape__Area": 20459585.5795898,
+        "Shape__Length": 21363.3453002127
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 106,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK68",
+        "NTAName": "Fort Greene",
+        "Shape__Area": 16482821.5953827,
+        "Shape__Length": 19825.5206791717
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 107,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX01",
+        "NTAName": "Claremont-Bathgate",
+        "Shape__Area": 16451616.3432465,
+        "Shape__Length": 29972.7765219308
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 108,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX40",
+        "NTAName": "Fordham South",
+        "Shape__Area": 6308874.95532227,
+        "Shape__Length": 15880.3521421213
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 109,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN34",
+        "NTAName": "East Harlem North",
+        "Shape__Area": 24494873.8731384,
+        "Shape__Length": 30603.2086996935
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 110,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN31",
+        "NTAName": "Lenox Hill-Roosevelt Island",
+        "Shape__Area": 21501460.1963654,
+        "Shape__Length": 37708.2045125003
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 111,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN68",
+        "NTAName": "Queensbridge-Ravenswood-Long Island City",
+        "Shape__Area": 23317033.2436371,
+        "Shape__Length": 27067.652313067
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 112,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX39",
+        "NTAName": "Mott Haven-Port Morris",
+        "Shape__Area": 41901529.8273163,
+        "Shape__Length": 35592.6895192081
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 113,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN72",
+        "NTAName": "Steinway",
+        "Shape__Area": 57766695.4605255,
+        "Shape__Length": 42969.0935505427
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 114,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN42",
+        "NTAName": "Oakland Gardens",
+        "Shape__Area": 51013693.7022858,
+        "Shape__Length": 42405.912724017
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 115,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN23",
+        "NTAName": "College Point",
+        "Shape__Area": 50559637.3195801,
+        "Shape__Length": 58674.4959669289
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 116,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX14",
+        "NTAName": "East Concourse-Concourse Village",
+        "Shape__Area": 18215580.941864,
+        "Shape__Length": 27275.7352271446
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 117,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX49",
+        "NTAName": "Pelham Parkway",
+        "Shape__Area": 23031279.3842773,
+        "Shape__Length": 25817.5789591748
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 118,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX08",
+        "NTAName": "West Farms-Bronx River",
+        "Shape__Area": 15084969.191803,
+        "Shape__Length": 17477.2890589325
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 119,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX46",
+        "NTAName": "Parkchester",
+        "Shape__Area": 9184677.03826904,
+        "Shape__Length": 12411.7882094818
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 120,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX55",
+        "NTAName": "Soundview-Bruckner",
+        "Shape__Area": 16253358.2969513,
+        "Shape__Length": 19756.5596537427
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 121,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX05",
+        "NTAName": "Bedford Park-Fordham North",
+        "Shape__Area": 14998883.1210327,
+        "Shape__Length": 22565.4816897071
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 122,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX43",
+        "NTAName": "Norwood",
+        "Shape__Area": 15724928.3422546,
+        "Shape__Length": 22150.3081770729
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 123,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX27",
+        "NTAName": "Hunts Point",
+        "Shape__Area": 49727973.4457092,
+        "Shape__Length": 44767.3631404211
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 124,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX75",
+        "NTAName": "Crotona Park East",
+        "Shape__Area": 16316630.7819977,
+        "Shape__Length": 24748.0356258068
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 125,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI08",
+        "NTAName": "Grymes Hill-Clifton-Fox Hills",
+        "Shape__Area": 37752520.1036682,
+        "Shape__Length": 37119.8825059403
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 126,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI35",
+        "NTAName": "New Brighton-Silver Lake",
+        "Shape__Area": 47137268.7122345,
+        "Shape__Length": 30320.3058944357
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 127,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX13",
+        "NTAName": "Co-op City",
+        "Shape__Area": 39833740.0408478,
+        "Shape__Length": 30327.1336628449
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 128,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK64",
+        "NTAName": "Prospect Heights",
+        "Shape__Area": 10230611.2373047,
+        "Shape__Length": 15074.1966131383
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 129,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK30",
+        "NTAName": "Dyker Heights",
+        "Shape__Area": 29911047.2260284,
+        "Shape__Length": 30596.8453739767
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 130,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN15",
+        "NTAName": "Far Rockaway-Bayswater",
+        "Shape__Area": 54160987.0667725,
+        "Shape__Length": 48672.7045260149
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 131,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN50",
+        "NTAName": "Elmhurst-Maspeth",
+        "Shape__Area": 21928087.3411102,
+        "Shape__Length": 32362.8768492234
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 132,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN57",
+        "NTAName": "Lindenwood-Howard Beach",
+        "Shape__Area": 63996598.8386993,
+        "Shape__Length": 78598.7348577891
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 133,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN28",
+        "NTAName": "Jackson Heights",
+        "Shape__Area": 47854936.8284149,
+        "Shape__Length": 29422.6465377808
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 134,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN98",
+        "NTAName": "Airport",
+        "Shape__Area": 227765640.197632,
+        "Shape__Length": 134725.451228514
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 135,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN53",
+        "NTAName": "Woodhaven",
+        "Shape__Area": 37000431.0626678,
+        "Shape__Length": 28067.6637007507
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 136,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK73",
+        "NTAName": "North Side-South Side",
+        "Shape__Area": 28868793.9760895,
+        "Shape__Length": 28144.5255732483
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 137,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN04",
+        "NTAName": "Hamilton Heights",
+        "Shape__Area": 16093787.9052429,
+        "Shape__Length": 17410.8231383461
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN03",
+        "NTAName": "Central Harlem North-Polo Grounds",
+        "Shape__Area": 25405230.8014526,
+        "Shape__Length": 28102.7395446687
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 139,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI24",
+        "NTAName": "Todt Hill-Emerson Hill-Heartland Village-Lighthouse Hill",
+        "Shape__Area": 184847710.944862,
+        "Shape__Length": 75919.7229278414
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 140,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK21",
+        "NTAName": "Seagate-Coney Island",
+        "Shape__Area": 38736061.2952881,
+        "Shape__Length": 51798.6919206709
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 141,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK23",
+        "NTAName": "West Brighton",
+        "Shape__Area": 8738903.93399048,
+        "Shape__Length": 14113.5751701628
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 142,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN19",
+        "NTAName": "Glendale",
+        "Shape__Area": 30016769.3996277,
+        "Shape__Length": 41514.3961756504
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 143,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN01",
+        "NTAName": "Marble Hill-Inwood",
+        "Shape__Area": 17732527.8065796,
+        "Shape__Length": 31845.2486206435
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 144,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX06",
+        "NTAName": "Belmont",
+        "Shape__Area": 13557215.9668121,
+        "Shape__Length": 17114.4167258538
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 145,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN11",
+        "NTAName": "Central Harlem South",
+        "Shape__Area": 14436192.3215637,
+        "Shape__Length": 16619.2958012381
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 146,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN40",
+        "NTAName": "Upper East Side-Carnegie Hill",
+        "Shape__Area": 20065364.0674896,
+        "Shape__Length": 23778.4107645121
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 147,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN14",
+        "NTAName": "Lincoln Square",
+        "Shape__Area": 15805594.2328186,
+        "Shape__Length": 19865.8868917787
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 148,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX28",
+        "NTAName": "Van Cortlandt Village",
+        "Shape__Area": 25666044.3960571,
+        "Shape__Length": 21945.6958240863
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 149,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN09",
+        "NTAName": "Morningside Heights",
+        "Shape__Area": 20158981.8476563,
+        "Shape__Length": 20744.3315192877
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 150,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN12",
+        "NTAName": "Upper West Side",
+        "Shape__Area": 34380394.532547,
+        "Shape__Length": 29158.1533142315
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 151,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN22",
+        "NTAName": "East Village",
+        "Shape__Area": 10896914.5262299,
+        "Shape__Length": 13539.2534786361
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 152,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN28",
+        "NTAName": "Lower East Side",
+        "Shape__Area": 23297316.2084503,
+        "Shape__Length": 25466.5955304278
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 153,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN35",
+        "NTAName": "Washington Heights North",
+        "Shape__Area": 22660610.2612305,
+        "Shape__Length": 26672.9025149243
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 154,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN36",
+        "NTAName": "Washington Heights South",
+        "Shape__Area": 23100474.3193207,
+        "Shape__Length": 22094.8987692329
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 155,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX26",
+        "NTAName": "Highbridge",
+        "Shape__Area": 16457352.8813782,
+        "Shape__Length": 18507.2845997266
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 156,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX63",
+        "NTAName": "West Concourse",
+        "Shape__Area": 19386546.5227661,
+        "Shape__Length": 28550.6341313374
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 157,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX09",
+        "NTAName": "Soundview-Castle Hill-Clason Point-Harding Park",
+        "Shape__Area": 51990458.2837677,
+        "Shape__Length": 67345.1458019757
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 158,
+        "BoroCode": 2,
+        "BoroName": "Bronx",
+        "CountyFIPS": "005",
+        "NTACode": "BX99",
+        "NTAName": "park-cemetery-etc-Bronx",
+        "Shape__Area": 220896710.990067,
+        "Shape__Length": 224248.832126845
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 159,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN99",
+        "NTAName": "park-cemetery-etc-Queens",
+        "Shape__Area": 311644917.271378,
+        "Shape__Length": 490423.443766483
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 160,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI36",
+        "NTAName": "Old Town-Dongan Hills-South Beach",
+        "Shape__Area": 67010398.5628815,
+        "Shape__Length": 41972.3019225397
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 161,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN03",
+        "NTAName": "Springfield Gardens South-Brookville",
+        "Shape__Area": 43260194.4316406,
+        "Shape__Length": 45314.1984352299
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 162,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN05",
+        "NTAName": "Rosedale",
+        "Shape__Area": 61590708.8713837,
+        "Shape__Length": 63361.9470888893
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 163,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI01",
+        "NTAName": "Annadale-Huguenot-Prince's Bay-Eltingville",
+        "Shape__Area": 140983500.764954,
+        "Shape__Length": 71214.4327850488
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 164,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI54",
+        "NTAName": "Great Kills",
+        "Shape__Area": 89599792.582695,
+        "Shape__Length": 66102.873296055
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 165,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK50",
+        "NTAName": "Canarsie",
+        "Shape__Area": 82031668.0106201,
+        "Shape__Length": 43693.7759237397
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 166,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK58",
+        "NTAName": "Flatlands",
+        "Shape__Area": 54341776.0594635,
+        "Shape__Length": 40635.2747137542
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 167,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK33",
+        "NTAName": "Carroll Gardens-Columbia Street-Red Hook",
+        "Shape__Area": 44600466.5479431,
+        "Shape__Length": 60806.1495927907
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 168,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI14",
+        "NTAName": "Grasmere-Arrochar-Ft. Wadsworth",
+        "Shape__Area": 40948492.5612488,
+        "Shape__Length": 40064.0706732158
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 169,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI37",
+        "NTAName": "Stapleton-Rosebank",
+        "Shape__Area": 46525224.4809113,
+        "Shape__Length": 56425.5254097709
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 170,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN71",
+        "NTAName": "Old Astoria",
+        "Shape__Area": 15620336.1968079,
+        "Shape__Length": 19334.5618852683
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 171,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK32",
+        "NTAName": "Sunset Park West",
+        "Shape__Area": 50064219.4394073,
+        "Shape__Length": 84548.0431967649
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 172,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK37",
+        "NTAName": "Park Slope-Gowanus",
+        "Shape__Area": 42509247.432785,
+        "Shape__Length": 31475.7403127827
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 173,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN37",
+        "NTAName": "Kew Gardens Hills",
+        "Shape__Area": 37891142.1043854,
+        "Shape__Length": 33109.3218365402
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 174,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN38",
+        "NTAName": "Pomonok-Flushing Heights-Hillcrest",
+        "Shape__Area": 38835956.8005524,
+        "Shape__Length": 30731.5921977034
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 175,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN21",
+        "NTAName": "Middle Village",
+        "Shape__Area": 57684948.4984741,
+        "Shape__Length": 42675.5681617623
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 176,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK09",
+        "NTAName": "Brooklyn Heights-Cobble Hill",
+        "Shape__Area": 9984530.19242859,
+        "Shape__Length": 14264.2818067421
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 177,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK38",
+        "NTAName": "DUMBO-Vinegar Hill-Downtown Brooklyn-Boerum Hill",
+        "Shape__Area": 28477045.4409485,
+        "Shape__Length": 32543.043179368
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 178,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK82",
+        "NTAName": "East New York",
+        "Shape__Area": 117083634.748962,
+        "Shape__Length": 89196.4708734266
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 179,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK83",
+        "NTAName": "Cypress Hills-City Line",
+        "Shape__Area": 27581770.6884308,
+        "Shape__Length": 36034.7021444846
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 180,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI11",
+        "NTAName": "Charleston-Richmond Valley-Tottenville",
+        "Shape__Area": 145668887.635048,
+        "Shape__Length": 84867.2548674211
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 181,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI05",
+        "NTAName": "New Springville-Bloomfield-Travis",
+        "Shape__Area": 327756696.186096,
+        "Shape__Length": 109204.196139809
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 182,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI32",
+        "NTAName": "Rossville-Woodrow",
+        "Shape__Area": 64961972.7187729,
+        "Shape__Length": 33241.6377746
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 183,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK31",
+        "NTAName": "Bay Ridge",
+        "Shape__Area": 67117360.7434082,
+        "Shape__Length": 44407.939370999
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 184,
+        "BoroCode": 3,
+        "BoroName": "Brooklyn",
+        "CountyFIPS": "047",
+        "NTACode": "BK99",
+        "NTAName": "park-cemetery-etc-Brooklyn",
+        "Shape__Area": 228897210.998703,
+        "Shape__Length": 394708.00642343
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 185,
+        "BoroCode": 5,
+        "BoroName": "Staten Island",
+        "CountyFIPS": "085",
+        "NTACode": "SI99",
+        "NTAName": "park-cemetery-etc-Staten Island",
+        "Shape__Area": 24001551.5907822,
+        "Shape__Length": 46184.9402182567
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 186,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN25",
+        "NTAName": "Battery Park City-Lower Manhattan",
+        "Shape__Area": 19054118.4893341,
+        "Shape__Length": 45692.7671759409
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 187,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN24",
+        "NTAName": "SoHo-TriBeCa-Civic Center-Little Italy",
+        "Shape__Area": 24861569.5557098,
+        "Shape__Length": 24277.7302280566
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 188,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN23",
+        "NTAName": "West Village",
+        "Shape__Area": 25000526.5579376,
+        "Shape__Length": 29384.7405354413
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 189,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN13",
+        "NTAName": "Hudson Yards-Chelsea-Flatiron-Union Square",
+        "Shape__Area": 37029745.3814697,
+        "Shape__Length": 45454.6745219058
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 190,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN15",
+        "NTAName": "Clinton",
+        "Shape__Area": 18381384.7850037,
+        "Shape__Length": 35037.1486287927
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 191,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN32",
+        "NTAName": "Yorkville",
+        "Shape__Area": 13594777.6040039,
+        "Shape__Length": 17409.1047118148
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 192,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN33",
+        "NTAName": "East Harlem South",
+        "Shape__Area": 16650687.5005798,
+        "Shape__Length": 18625.0676098757
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 193,
+        "BoroCode": 1,
+        "BoroName": "Manhattan",
+        "CountyFIPS": "061",
+        "NTACode": "MN99",
+        "NTAName": "park-cemetery-etc-Manhattan",
+        "Shape__Area": 91540942.102356,
+        "Shape__Length": 155075.926487502
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 194,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN18",
+        "NTAName": "Rego Park",
+        "Shape__Area": 19941713.396286,
+        "Shape__Length": 26675.1078860387
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 195,
+        "BoroCode": 4,
+        "BoroName": "Queens",
+        "CountyFIPS": "081",
+        "NTACode": "QN29",
+        "NTAName": "Elmhurst",
+        "Shape__Area": 32675257.9651947,
+        "Shape__Length": 36711.3724933807
+      }
+    }
+  ]
+}

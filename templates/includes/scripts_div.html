@@ -1,0 +1,482 @@
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+<script>
+var NHinfo = (function() {
+      var NHinfo = null;
+      $.ajax({
+          'async': false,
+          'global': false,
+          'url': "{{ url_for('static',filename='js/NHinfo.json')}}",
+          'dataType': "json",
+          'success': function (data) {
+          NHinfo = data;
+          }
+      });
+      return NHinfo;
+  })();
+</script>
+
+<script>
+function nodeToString ( node ) {
+ var tmpNode = document.createElement( "div" );
+ tmpNode.appendChild( node.cloneNode( true ) );
+ var str = tmpNode.innerHTML;
+ tmpNode = node = null; // prevent memory leaks in IE
+ return str;
+}
+</script>
+
+<script>
+//https://stackoverflow.com/questions/14573223/set-cookie-and-get-cookie-with-javascript
+function createCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name,"",-1);
+}
+
+var cookieRegistry = [];
+
+//http://jsfiddle.net/ArondeParon/5RsTm/4/
+function listenCookieChange(cookieName, callback) {
+    setInterval(function() {
+        if (cookieRegistry[cookieName]) {
+            if (readCookie(cookieName) != cookieRegistry[cookieName]) {
+                // update registry so we dont get triggered again
+                cookieRegistry[cookieName] = readCookie(cookieName);
+                return callback();
+            }
+        } else {
+            cookieRegistry[cookieName] = readCookie(cookieName);
+        }
+    }, 100);
+}
+</script>
+
+<script>
+
+function heightCalc(padding,minH,maxH){
+
+  var body = document.body,
+  html = document.documentElement;
+  var height = Math.max( body.scrollHeight, body.offsetHeight,html.clientHeight, html.scrollHeight, html.offsetHeight );
+ //numbers below came from css element heights
+  var visibleLimit=Math.floor((height-padding-padding-maxH)/minH);
+
+  return visibleLimit;
+}
+
+function countCookie() {
+    var NHselection=readCookie("NHselection");
+    var NHcount=0;
+    if (NHselection!=null)
+    {
+      var array = NHselection.split(',');
+      var NHcount=array.length;
+    }
+    return NHcount;
+}
+
+function fetchFeature(NTACode)
+{
+  var NHlayer=window.NHlayer;
+  var NTAfeature=null;
+  NHlayer.forEach(function(feature){
+    if(feature.getProperty('NTACode') == NTACode){
+      NTAfeature=feature;
+    }
+  });
+  return NTAfeature;
+}
+
+</script>
+
+<script>
+
+function selectFeature(feature){
+  feature.setProperty('isClicked',true);
+  return;
+}
+
+function deselectFeature(feature){
+  feature.setProperty('isClicked',false);
+  return;
+}
+
+function renderCartItem(limit){
+
+  var cartDiv = document.getElementById( 'cart' );
+  var cartItems=cartDiv.childNodes;
+  var currentCount=cartItems.length;
+  var leftoverDisplay="none";
+  var count=0;
+  var leftover=document.getElementById("leftover");
+
+  for(var i=1;i < cartItems.length;i++) {
+
+      if (i<currentCount-limit){
+          cartItems[i].style.display="none";
+          count=count+1;
+          leftoverDisplay="table";
+        }
+      else{
+        cartItems[i].style.display="table";
+        }
+
+  }
+
+
+  cartItems[0].style.display=leftoverDisplay;
+
+  leftover.innerHTML=count.toString()+" more neighborhoods selected ...";
+
+  var cartBadge=document.getElementById("cartCount");
+  cartBadge.innerHTML=cartItems.length-1;
+}
+
+
+function removeMapItem(feature){
+
+  var limit= heightCalc(60,60,225);
+
+  deselectFeature(feature);
+  var NTACode=feature.getProperty('NTACode');
+
+  var cookie=readCookie("NHselection");
+  var NHselection = cookie.split(',');
+  var index = NHselection.indexOf(NTACode);
+  if (index > -1) {
+    NHselection.splice(index, 1);
+  }
+  createCookie("NHselection",NHselection,12);
+
+  var cartDiv = document.getElementById( 'cart' );
+  if (cartDiv==null)
+  {
+    return;
+  }
+  var cartItems=cartDiv.childNodes;
+  for(var i=0;i < cartItems.length;i++) {
+      if (cartItems[i].getAttribute("NTACode")==NTACode){cartItems[i].remove();}
+  }
+  renderCartItem(limit);
+
+return;
+}
+
+//cart items handing, remove makeAccordion once working
+function addMapItem(feature,expand=true) {
+
+  var limit= heightCalc(60,60,225);
+
+  selectFeature(feature);
+  var NTACode=feature.getProperty('NTACode');
+
+  var cartDiv = document.getElementById( 'cart' );
+  if (cartDiv==null)
+  {
+    cartDiv=initCartDiv();
+    var cartPreview=document.getElementById("cart_preview");
+    cartPreview.appendChild(cartDiv);
+    cartDiv = document.getElementById( 'cart' );
+  }
+
+  var cartItems=cartDiv.childNodes;
+
+  var cartItem=createCartItem(feature,"cart");
+  cartDiv.appendChild(cartItem);
+
+
+  var cartPreview=document.getElementById("cart_preview");
+  cartPreview.appendChild(cartDiv);
+
+  renderCartItem(limit);
+
+  if (expand==true){expandLast("cart");}
+
+  var NHselection=[];
+  var cookie=readCookie("NHselection");
+
+  if (cookie!=null){NHselection = cookie.split(',');}
+
+  if (NHselection.includes(NTACode)) {
+    return;
+  }
+  else{
+    NHselection.push(NTACode);
+    createCookie("NHselection",NHselection,12);
+  }
+
+  function initCartDiv(){
+
+    cartDiv=document.createElement('div');
+    cartDiv.setAttribute("id","cart");
+    cartDiv.className="panel-group";
+    cartDiv.setAttribute("role","tablist");
+    cartDiv.setAttribute("aria-multiselectable","true");
+
+    var wrapper=document.createElement('div');
+    wrapper.className="panel panel-default";
+
+    var heading=document.createElement('div');
+    heading.className="panel-heading";
+    heading.setAttribute("role","tab")
+
+
+    var title=document.createElement('h4');
+    title.className="panel-title";
+
+    var anchor=document.createElement('a');
+    anchor.setAttribute("role","button");
+    anchor.setAttribute("data-toggle","collapse");
+    anchor.setAttribute("data-parent","#cart");
+    anchor.setAttribute("aria-expanded","true");
+    anchor.setAttribute("aria-expanded","true");
+    anchor.setAttribute("id","leftover");
+
+    anchor.innerHTML="more Neighborhoods Selected";
+
+    title.appendChild(anchor);
+    heading.appendChild(title);
+    wrapper.appendChild(heading);
+
+    cartDiv.appendChild(wrapper);
+    return cartDiv;
+  }
+
+
+  function NHcontent(feature)
+  {
+    var NTAName=feature.getProperty('NTAName');
+    var NTACode=feature.getProperty('NTACode');
+
+
+    var wrapper=document.createElement("div");
+    wrapper.className='panel-body';
+
+    var description=document.createElement("div");
+    description.style.overflow="hidden";
+
+    var button=document.createElement("button");
+    button.className="btn btn-primary btn-sm";
+    button.setAttribute("type","button");
+    button.setAttribute("onClick","removeMapItem(fetchFeature('"+NTACode+"'))");
+    button.innerHTML="remove from cart"
+    button.style.float="right";
+
+    var footer=document.createElement("footer");
+    footer.style.paddingTop="15px";
+    footer.appendChild(button);
+
+    var detail=document.createElement("ul");
+    detail.className="list-group";
+    detail.style.float="left";
+    detail.style.width="70%";
+
+    var NTACode=document.createElement("li");
+    //NTACode.className="list-group-item";
+    var BoroName=document.createElement("li");
+    //BoroName.className="list-group-item";
+    var Area=document.createElement("li");
+    //Area.className="list-group-item";
+    var moreInfo=document.createElement("li");
+    //moreInfo.className="list-group-item";
+    moreInfo.setAttribute("href","#");
+
+
+    NTACode.innerHTML="NTA Code: "+feature.getProperty('NTACode');
+    BoroName.innerHTML="Boro Name: "+feature.getProperty('BoroName');
+    Area.innerHTML="Area: "+feature.getProperty('Shape_Area');
+    moreInfo.innerHTML="click here for more info";
+
+    detail.appendChild(NTACode);
+    detail.appendChild(BoroName);
+    detail.appendChild(Area);
+    detail.appendChild(moreInfo);
+
+    var thumbnail=document.createElement("img");
+    thumbnail.setAttribute("id","thumbnail");
+    thumbnail.setAttribute("src","http://via.placeholder.com/100x100");
+    thumbnail.style.float="right";
+    thumbnail.style.width="30%";
+    thumbnail.style.paddingLeft="10px";
+
+
+
+
+    description.appendChild(detail);
+    description.appendChild(thumbnail);
+
+    wrapper.appendChild(description);
+    wrapper.appendChild(footer);
+
+    return [NTAName, wrapper];
+
+  }
+
+  function createCartItem(feature,parent)
+  {
+
+      contents = NHcontent(feature);
+
+      var NTACode=feature.getProperty('NTACode');
+
+      var wrapper=document.createElement('div');
+      wrapper.className="panel panel-default";
+
+      var heading=document.createElement('div');
+      heading.className="panel-heading";
+      heading.setAttribute("role","tab")
+      heading.setAttribute("id","heading"+NTACode);
+
+      var title=document.createElement('h4');
+      title.className="panel-title";
+
+      var anchor=document.createElement('a');
+      anchor.setAttribute("role","button");
+      anchor.setAttribute("data-toggle","collapse");
+      anchor.setAttribute("data-parent","#"+parent);
+      anchor.setAttribute("href","#collapse"+NTACode);
+      anchor.setAttribute("aria-expanded","true");
+      anchor.setAttribute("aria-controls","#collapse"+NTACode);
+
+      anchor.innerHTML=contents[0];
+
+      heading.appendChild(title.appendChild(anchor));
+
+      var collapsible=document.createElement('div');
+      collapsible.setAttribute("id","collapse"+NTACode);
+      collapsible.className="panel-collapse collapse";
+      collapsible.setAttribute("role","tablpanel");
+      collapsible.setAttribute("aria-labelledby","heading"+NTACode);
+
+      var body=document.createElement('div');
+      body.className="panel-body";
+      body.appendChild(contents[1]);
+
+      collapsible.appendChild(body);
+
+      wrapper.appendChild(heading);
+      wrapper.appendChild(collapsible);
+
+      wrapper.setAttribute("NTACode",NTACode);
+
+      return wrapper;
+    }
+
+
+  function expandLast(parent)
+  {
+    var $parent = $('#'+parent);
+    $parent.find('> div:last-of-type a').trigger('click');
+  }
+
+
+
+  return;
+}
+
+function prePopMap(BRlayer,NHlayer)
+{
+  var whereClause_unselected='1=1';
+  var whereClause_selected='BoroCode=0';
+  var NHselection=[];
+  var BoroCodes={MN:1,BX:2,BK:3,QN:4,SI:5};
+  var cookie=readCookie("NHselection");
+
+  if (cookie!=null)
+  {
+    var NHselection = cookie.split(',').clean("");
+  }
+
+
+  var Boros=[];
+  for(var i=0;i < NHselection.length;i++) {
+    var Boro=BoroCodes[NHselection[i].slice(0,-2)];
+
+    if (Boros.includes(Boro)) {
+        continue;
+        }
+
+    else{
+        Boros.push(Boro);
+        }
+  }
+
+  function queryMaker(entries)
+  {
+    var queries=[]
+    for (var j=0;j < entries.length;j++)
+    {
+      var query="BoroCode="+entries[j];
+      queries.push(query);
+    }
+      queryClause=queries.join("+OR+");
+      return queryClause;
+  }
+
+  var Boros_unselected=[1,2,3,4,5];
+  for(var j=0;j < Boros.length;j++)
+  {
+    var index=Boros_unselected.indexOf(Boros[j]);
+
+    if (index > -1) {
+      Boros_unselected.splice(index, 1);
+    }
+  }
+
+
+  if (Boros.length>0)
+  {
+    whereClause_selected=queryMaker(Boros);
+    whereClause_unselected=queryMaker(Boros_unselected);
+  }
+  var BRurl='http://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/nybb/FeatureServer/0/query?where='+whereClause_unselected+'&outFields=*&geometryPrecision=8&outSR=4326&f=geojson';
+  var NHurl='http://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/nynta/FeatureServer/0/query?where='+whereClause_selected+'&outSR=4326&outFields=*&returnCentroid=true&f=geojson';
+
+
+  BRlayer.loadGeoJson(BRurl);
+  NHlayer.loadGeoJson(NHurl);
+
+
+  NHlayer.addListener('addfeature', function(NH)
+  {
+    if(NHselection.includes(NH.feature.getProperty("NTACode")))
+    {
+      addMapItem(NH.feature,false);
+    }
+  });
+
+}
+
+
+Array.prototype.clean = function(deleteValue) {
+  for (var i = 0; i < this.length; i++) {
+    if (this[i] == deleteValue) {
+      this.splice(i, 1);
+      i--;
+    }
+  }
+  return this;
+}
+
+</script>
